@@ -12,7 +12,8 @@ jobs:
     if: contains(github.event.pull_request.labels.*.name, 'automerge')
     runs-on: ubuntu-latest
     steps:
-      - name: Enable auto-merge when checks pass
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          merge-method: squash
+      - name: Auto-merge via gh (no checkout)
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --auto --squash --repo "${{ github.repository }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
