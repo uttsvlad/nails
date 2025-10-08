@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build-test:
-    name: Build & Test (Maven, JDK matrix)
+    name: Build & Test
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false

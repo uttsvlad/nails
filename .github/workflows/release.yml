@@ -19,7 +19,7 @@ jobs:
           java-version: '21'
           cache: maven
 
-      - name: Build (skip tests if already validated)
+      - name: Build
         run: mvn -B -DskipTests=true clean package
 
       - name: Upload JAR artifact
