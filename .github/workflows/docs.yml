@@ -19,7 +19,7 @@ jobs:
           java-version: '21'
           cache: maven
 
-      - name: Generate Javadoc (and Asciidoctor if configured)
+      - name: Generate Javadoc
         run: |
           mvn -B -DskipTests=true javadoc:javadoc
       - name: Prepare gh-pages
