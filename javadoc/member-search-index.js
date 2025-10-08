@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"ru.nails","c":"NailsApp","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"ru.nails","c":"NailsApp","l":"NailsApp()","u":"%3Cinit%3E()"}];updateSearchResults();
